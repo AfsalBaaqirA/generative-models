@@ -19,9 +19,9 @@ def benchmark_attn():
         return t0.blocked_autorange().mean * 1e6
 
     # Lets define the hyper-parameters of our input
-    batch_size = 32
-    max_sequence_len = 1024
-    num_heads = 32
+    batch_size = 8
+    max_sequence_len = 256
+    num_heads = 8
     embed_dimension = 32
 
     dtype = torch.float16
@@ -150,7 +150,7 @@ def benchmark_transformer_blocks():
     checkpoint = True
     compile = False
 
-    batch_size = 32
+    batch_size = 8
     h, w = 64, 64
     context_len = 77
     embed_dimension = 1024
