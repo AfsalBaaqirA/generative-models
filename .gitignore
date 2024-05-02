@@ -8,7 +8,6 @@
 
 # directories
 /checkpoints
-/dist
 /outputs
 /build
 /src
