@@ -70,8 +70,8 @@ def sample(
     elif version == "sv3d_u":
         num_frames = 21
         num_steps = default(num_steps, 50)
-        output_folder = default(output_folder, "outputs/simple_video_sample/sv3d_u/")
-        model_config = "scripts/sampling/configs/sv3d_u.yaml"
+        output_folder = default(output_folder, "generative-models/Pots/outputs/simple_video_sample/sv3d_u/")
+        model_config = "generative-models/scripts/sampling/configs/sv3d_u.yaml"
         cond_aug = 1e-5
     elif version == "sv3d_p":
         num_frames = 21
